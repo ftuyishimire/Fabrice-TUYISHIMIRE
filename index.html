@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +21,8 @@
         </nav>
     </header>
     <main>
-        <section class="hero container">
-            <img class="hero__img" src="images/1442DFA44E8CA73EEED57E380778006D_c421253e5c_digital.jpeg" alt="">
+        <section class="hero container " data-aos="zoom-in-down">
+            <img class="hero__img" data-aos="zoom-in" src="images/1442DFA44E8CA73EEED57E380778006D_c421253e5c_digital.jpeg" alt="">
             <h2 class="hero__subtitle">Hi, I'm Fablo ✋</h2>
             <h1 class="hero__title">FRONT-END<br/>
                 WEB DEVELOPER.
@@ -30,7 +31,7 @@
             <a class="hero__btn btn" href="#">Reach out</a>
         </section>
         <section class="about container section">
-            <div class="about__content">
+            <div class="about__content" data-aos="zoom-in-right">
                 <h2 class="about__title">About</h2>
                
                 <p class="about__description">Hello there! I'm Fablo, a <strong>Frontend web developer </strong>based near my pace.
@@ -55,16 +56,16 @@
                     <ul class="about__ul">
                         <li class="about__list">HTML</li>
                         <li class="about__list">CSS</li>
-                        <li class="about__list">ReactJS</li>
+                        <li class="about__list">Django</li>
                     </ul>
 
                 </div>
             </div>
             <div class="about__img-wraper">
-                <img class="about__img" src="images/1442DFA44E8CA73EEED57E380778006D_c421253e5c_digital.jpeg" alt="">
+                <img class="about__img" data-aos="zoom-in-left" src="images/1442DFA44E8CA73EEED57E380778006D_c421253e5c_digital.jpeg" alt="">
             </div>
         </section>
-        <section class="feature container section">
+        <section class="feature container section" data-aos="zoom-out">
             <h3 class="featured__subtitle">Featured Projects</h3>
             <div class="featured__wrapper">
                 <h2 class="featured__title">Fablo Wagana</h2>
@@ -115,9 +116,53 @@
                 </div>
             </div>
         </section>
+        <section class="footer container section">
+            <div class="footer__header-list">
+                <h2 class="footer__heading" data-aos="fade-right" >Hire Me</h2>
+
+                <hr class="footer__separator">
+                <div class="footer__wrapper">
+                    <section class="footer__container">
+                        <h3 class="footer__info" data-aos="fade-right">menu</h3>
+                        <ul class="footer__list" data-aos="flip-up">
+                            <li class="footer__item">About</li>
+                            <li class="footer__item">Work</li>
+                            <li class="footer__item">Contact</li>
+                        </ul>
+                    </section>
+                    <section class="footer__container">
+                        <h3 class="footer__info" data-aos="fade-right">Services</h3>
+                        <ul class="footer__list" data-aos="flip-up">
+                            <li class="footer__item">Book Writting</li>
+                            <li class="footer__item">Web Design</li>
+                            <li class="footer__item">Web Dev</li>
+                        </ul>
+                    </section>
+                    <section class="footer__container">
+                        <h3 class="footer__info" data-aos="fade-right">pricing</h3>
+                        <ul class="footer__list" data-aos="flip-up">
+                            <li class="footer__item">Casual</li>
+                            <li class="footer__item">Discount</li>
+                            <li class="footer__item">Promotion</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                &copy; Fablo Wagana | 2024
+            </div>
+        </section>
         <!-- <section></section>
-        <section></section>
     </main>
     <footer></footer> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1200, // Animation duration (in ms)
+        easing: 'ease', // Easing function for the animations
+        once: true, // Ensures the animation happens only once
+    });
+</script>
 </body>
 </html>
